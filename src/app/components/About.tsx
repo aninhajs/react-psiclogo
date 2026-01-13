@@ -45,7 +45,7 @@ export function About() {
           <div className="flex justify-center lg:justify-start">
             <div className="relative w-full max-w-[280px] lg:max-w-none">
               <ImageWithFallback
-                src="./img/angelo1.png"
+                src="/angelo1.png"
                 alt="Dr. Angelo Queiroz em seu consultório"
                 className="w-full h-[350px] lg:h-[450px] object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 hover:shadow-2xl"
               />

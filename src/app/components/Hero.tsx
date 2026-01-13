@@ -45,7 +45,7 @@ export function Hero() {
             <div className="relative w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[400px]">
               <div className="relative rounded-[30px_80px_60px_15px] lg:rounded-[40px_100px_80px_20px] overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-105 hover:rounded-[80px_30px_15px_60px]">
                 <ImageWithFallback
-                  src="./img/angelo2.png"
+                  src="/angelo2.png"
                   alt="Dr. Angelo Queiroz - Psicólogo Clínico"
                   className="w-full h-[400px] sm:h-[450px] lg:h-[500px] object-cover"
                 />
