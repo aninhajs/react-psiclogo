@@ -64,13 +64,13 @@ export function About() {
             </p>
 
             {/* Info Cards */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 mb-8 lg:mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 lg:gap-6 mb-8 lg:mb-12">
               {info.map((item, index) => (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center bg-white p-4 rounded-lg shadow-sm">
                   <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1">
                     {item.value}
                   </div>
-                  <div className="text-xs sm:text-sm text-gray-600">
+                  <div className="text-sm sm:text-xs lg:text-sm text-gray-600">
                     {item.title}
                   </div>
                 </div>
