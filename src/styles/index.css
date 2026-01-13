@@ -24,3 +24,36 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Mobile-friendly animations */
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) {
+  .touch-scale:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease-out;
+  }
+}

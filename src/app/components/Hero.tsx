@@ -27,7 +27,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 lg:gap-6">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#5b8fb9] text-white rounded-full font-medium text-base sm:text-lg hover:bg-gray-900 transition-all hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto justify-center"
+                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#5b8fb9] text-white rounded-full font-medium text-base sm:text-lg hover:bg-gray-900 transition-all hover:shadow-xl hover:-translate-y-1 active:scale-95 active:bg-gray-800 w-full sm:w-auto justify-center"
               >
                 <Calendar className="w-5 h-5" />
                 Agendar Agora
@@ -43,7 +43,7 @@ export function Hero() {
           {/* Image */}
           <div className="flex justify-center order-1 lg:order-2">
             <div className="relative w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[400px]">
-              <div className="relative rounded-[30px_80px_60px_15px] lg:rounded-[40px_100px_80px_20px] overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-105 hover:rounded-[80px_30px_15px_60px]">
+              <div className="relative rounded-[30px_80px_60px_15px] lg:rounded-[40px_100px_80px_20px] overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-105 hover:rounded-[80px_30px_15px_60px] active:scale-[1.02] animate-pulse-subtle">
                 <ImageWithFallback
                   src="/angelo2.png"
                   alt="Dr. Angelo Queiroz - Psicólogo Clínico"

@@ -47,7 +47,7 @@ export function About() {
               <ImageWithFallback
                 src="/angelo1.png"
                 alt="Dr. Angelo Queiroz em seu consultório"
-                className="w-full h-[350px] lg:h-[450px] object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 hover:shadow-2xl"
+                className="w-full h-[350px] lg:h-[450px] object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 hover:shadow-2xl touch-scale animate-fade-in"
               />
             </div>
           </div>
@@ -66,7 +66,11 @@ export function About() {
             {/* Info Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 lg:gap-6 mb-8 lg:mb-12">
               {info.map((item, index) => (
-                <div key={index} className="text-center bg-white p-4 rounded-lg shadow-sm">
+                <div
+                  key={index}
+                  className="text-center bg-white p-4 rounded-lg shadow-sm animate-fade-in touch-scale"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
                   <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1">
                     {item.value}
                   </div>
