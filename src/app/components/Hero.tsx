@@ -33,10 +33,10 @@ export function Hero() {
                 Agendar Agora
               </a>
 
-              <div className="flex items-center gap-2 text-gray-600 text-sm sm:text-base">
+              {/* <div className="flex items-center gap-2 text-gray-600 text-sm sm:text-base">
                 <Video className="w-5 h-5 text-[#5b8fb9]" />
                 <span>Atendimento online e presencial</span>
-              </div>
+              </div> */}
             </div>
           </div>
 

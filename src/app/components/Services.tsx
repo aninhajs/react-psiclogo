@@ -54,7 +54,8 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="group bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-[#5b8fb9] relative overflow-hidden"
+                className="group bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-[#5b8fb9] relative overflow-hidden animate-fade-in touch-scale"
+                style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Gradient overlay on hover */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#5b8fb9] to-[#a8d5ba] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />

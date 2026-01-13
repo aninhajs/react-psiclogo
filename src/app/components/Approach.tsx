@@ -49,7 +49,8 @@ export function Approach() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-fade-in touch-scale"
+              style={{animationDelay: `${index * 0.15}s`}}
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-br from-[#5b8fb9] to-[#a8d5ba] flex items-center justify-center text-white font-bold text-lg lg:text-xl group-hover:scale-110 transition-transform">

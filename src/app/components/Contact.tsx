@@ -84,7 +84,8 @@ export function Contact() {
                 return (
                   <div
                     key={index}
-                    className="bg-gray-50 p-4 lg:p-6 rounded-xl hover:bg-white hover:shadow-lg transition-all text-center"
+                    className="bg-gray-50 p-4 lg:p-6 rounded-xl hover:bg-white hover:shadow-lg transition-all text-center animate-fade-in touch-scale"
+                    style={{animationDelay: `${index * 0.1}s`}}
                   >
                     <Icon className="w-6 h-6 text-[#5b8fb9] mb-3 mx-auto" />
                     <h4 className="text-sm font-medium text-gray-900 mb-1">
@@ -123,7 +124,7 @@ export function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-xl">
+          <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-xl animate-fade-in">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -214,7 +215,7 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-[#5b8fb9] text-white rounded-full font-medium hover:bg-gray-900 transition-all hover:shadow-lg hover:-translate-y-1"
+                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-[#5b8fb9] text-white rounded-full font-medium hover:bg-gray-900 transition-all hover:shadow-lg hover:-translate-y-1 active:scale-95 touch-scale"
               >
                 <Send className="w-5 h-5" />
                 Enviar Mensagem

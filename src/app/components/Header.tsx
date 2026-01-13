@@ -61,7 +61,7 @@ export function Header({ isScrolled }: HeaderProps) {
             {/* CTA Button - Desktop */}
             <a
               href="#contact"
-              className="hidden lg:inline-flex items-center px-6 py-2.5 bg-[#5b8fb9] text-white rounded-full font-medium text-sm hover:bg-gray-900 transition-all hover:shadow-lg hover:-translate-y-0.5"
+              className="hidden lg:inline-flex items-center px-6 py-2.5 bg-[#5b8fb9] text-white rounded-full font-medium text-sm hover:bg-gray-900 transition-all hover:shadow-lg hover:-translate-y-0.5 active:scale-95 touch-scale"
             >
               Agendar Consulta
             </a>
