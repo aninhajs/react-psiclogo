@@ -69,7 +69,7 @@ export function About() {
                 <div
                   key={index}
                   className="text-center bg-white p-4 rounded-lg shadow-sm animate-fade-in touch-scale"
-                  style={{animationDelay: `${index * 0.1}s`}}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1">
                     {item.value}
@@ -89,7 +89,7 @@ export function About() {
                   <div
                     key={index}
                     className="bg-white p-4 lg:p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 animate-fade-in touch-scale"
-                    style={{animationDelay: `${(index + 3) * 0.1}s`}}
+                    style={{ animationDelay: `${(index + 3) * 0.1}s` }}
                   >
                     <Icon className="w-8 h-8 lg:w-10 lg:h-10 text-[#5b8fb9] mb-3 lg:mb-4 mx-auto lg:mx-0" />
                     <h3 className="text-base lg:text-lg font-semibold text-gray-900 mb-2">

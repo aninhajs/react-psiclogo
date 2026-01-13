@@ -85,7 +85,7 @@ export function Contact() {
                   <div
                     key={index}
                     className="bg-gray-50 p-4 lg:p-6 rounded-xl hover:bg-white hover:shadow-lg transition-all text-center animate-fade-in touch-scale"
-                    style={{animationDelay: `${index * 0.1}s`}}
+                    style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <Icon className="w-6 h-6 text-[#5b8fb9] mb-3 mx-auto" />
                     <h4 className="text-sm font-medium text-gray-900 mb-1">
@@ -107,10 +107,10 @@ export function Contact() {
             </div>
 
             {/* Online Consultation Banner */}
-            <div className="bg-gradient-to-r from-[#5b8fb9] to-[#a8d5ba] p-6 rounded-2xl text-white">
+            {/* <div className="bg-gradient-to-r from-[#5b8fb9] to-[#a8d5ba] p-6 rounded-2xl text-white">
               <div className="flex items-start gap-4">
                 <Video className="w-8 h-8 flex-shrink-0 mt-1" />
-                <div>
+                {/* <div>
                   <h4 className="text-lg font-semibold mb-2">
                     Atendimento Online
                   </h4>
@@ -118,9 +118,9 @@ export function Contact() {
                     Consultas por videochamada com a mesma qualidade do
                     presencial
                   </p>
-                </div>
-              </div>
-            </div>
+                </div> */}
+            {/* </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

@@ -53,7 +53,7 @@ export function Blog() {
             <article
               key={index}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-fade-in touch-scale"
-              style={{animationDelay: `${index * 0.2}s`}}
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative overflow-hidden h-48">
                 <ImageWithFallback

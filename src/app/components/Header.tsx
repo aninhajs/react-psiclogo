@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Menu, X, Heart } from 'lucide-react';
+import { useState } from "react";
+import { Menu, X, Heart } from "lucide-react";
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -9,12 +9,12 @@ export function Header({ isScrolled }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '#home', label: 'Início' },
-    { href: '#about', label: 'Sobre' },
-    { href: '#services', label: 'Serviços' },
-    { href: '#approach', label: 'Abordagem' },
-    { href: '#blog', label: 'Conteúdos' },
-    { href: '#contact', label: 'Contato' },
+    { href: "#home", label: "Início" },
+    { href: "#about", label: "Sobre" },
+    { href: "#services", label: "Serviços" },
+    { href: "#approach", label: "Abordagem" },
+    { href: "#blog", label: "Conteúdos" },
+    { href: "#contact", label: "Contato" },
   ];
 
   const handleLinkClick = () => {
@@ -26,8 +26,8 @@ export function Header({ isScrolled }: HeaderProps) {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg'
-            : 'bg-white/98 backdrop-blur-sm'
+            ? "bg-white/95 backdrop-blur-md shadow-lg"
+            : "bg-white/98 backdrop-blur-sm"
         }`}
       >
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,13 +85,13 @@ export function Header({ isScrolled }: HeaderProps) {
       {/* Mobile Menu */}
       <div
         className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${
-          isMenuOpen ? 'visible' : 'invisible'
+          isMenuOpen ? "visible" : "invisible"
         }`}
       >
         {/* Overlay */}
         <div
           className={`absolute inset-0 bg-black transition-opacity duration-300 ${
-            isMenuOpen ? 'opacity-50' : 'opacity-0'
+            isMenuOpen ? "opacity-50" : "opacity-0"
           }`}
           onClick={() => setIsMenuOpen(false)}
         />
@@ -99,7 +99,7 @@ export function Header({ isScrolled }: HeaderProps) {
         {/* Menu Panel */}
         <div
           className={`absolute top-0 right-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl transition-transform duration-300 ${
-            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <div className="flex flex-col h-full">

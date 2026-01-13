@@ -1,36 +1,50 @@
-import { User, Brain, Heart, Compass, HandHeart, Users, ArrowRight } from 'lucide-react';
+import {
+  User,
+  Brain,
+  Heart,
+  Compass,
+  HandHeart,
+  Users,
+  ArrowRight,
+} from "lucide-react";
 
 export function Services() {
   const services = [
     {
       icon: User,
-      title: 'Terapia Individual',
-      description: 'Processo terapêutico personalizado para autoconhecimento, crescimento pessoal e resolução de questões emocionais.',
+      title: "Terapia Individual",
+      description:
+        "Processo terapêutico personalizado para autoconhecimento, crescimento pessoal e resolução de questões emocionais.",
     },
     {
       icon: Brain,
-      title: 'Ansiedade e Depressão',
-      description: 'Tratamento especializado para transtornos de ansiedade e episódios depressivos, com técnicas comprovadas e acolhimento.',
+      title: "Ansiedade e Depressão",
+      description:
+        "Tratamento especializado para transtornos de ansiedade e episódios depressivos, com técnicas comprovadas e acolhimento.",
     },
     {
       icon: Heart,
-      title: 'Terapia de Casal',
-      description: 'Apoio para relacionamentos em crise, melhorando a comunicação e fortalecendo vínculos afetivos.',
+      title: "Terapia de Casal",
+      description:
+        "Apoio para relacionamentos em crise, melhorando a comunicação e fortalecendo vínculos afetivos.",
     },
     {
       icon: Compass,
-      title: 'Autoconhecimento',
-      description: 'Jornada de descoberta interior para identificar potenciais, valores e propósito de vida.',
+      title: "Autoconhecimento",
+      description:
+        "Jornada de descoberta interior para identificar potenciais, valores e propósito de vida.",
     },
     {
       icon: HandHeart,
-      title: 'Orientação Emocional',
-      description: 'Suporte para momentos difíceis, luto, mudanças de vida e desenvolvimento de inteligência emocional.',
+      title: "Orientação Emocional",
+      description:
+        "Suporte para momentos difíceis, luto, mudanças de vida e desenvolvimento de inteligência emocional.",
     },
     {
       icon: Users,
-      title: 'Terapia Familiar',
-      description: 'Mediação de conflitos familiares e fortalecimento de vínculos entre pais, filhos e outros membros.',
+      title: "Terapia Familiar",
+      description:
+        "Mediação de conflitos familiares e fortalecimento de vínculos entre pais, filhos e outros membros.",
     },
   ];
 
@@ -55,21 +69,21 @@ export function Services() {
               <div
                 key={index}
                 className="group bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-[#5b8fb9] relative overflow-hidden animate-fade-in touch-scale"
-                style={{animationDelay: `${index * 0.1}s`}}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Gradient overlay on hover */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#5b8fb9] to-[#a8d5ba] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-                
+
                 <Icon className="w-10 h-10 lg:w-12 lg:h-12 text-[#5b8fb9] mb-4 transition-transform group-hover:scale-110" />
-                
+
                 <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-3">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-sm lg:text-base text-gray-600 mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                
+
                 <a
                   href="#contact"
                   className="inline-flex items-center gap-2 text-sm font-medium text-[#5b8fb9] hover:text-gray-900 transition-colors group/link"
